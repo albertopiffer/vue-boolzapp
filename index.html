@@ -95,10 +95,10 @@
                         
                         <div class="chatContact d-flex justify-content-between align-items-center px-3">
 
-                            <img src="./img/avatar_s.png" alt="" class="profilePic">
+                            <img :src="selectedContact.avatar" alt="propic" class="profilePic">
 
                             <div class="chatName d-flex flex-column flex-grow-1">
-                                <h5>Michele</h5>    <!-- sistemare con vue -->
+                                <h5>{{ selectedContact.name }}</h5>    <!-- sistemare con vue -->
                                 <span>Ultimo accesso oggi alle 12:00</span>
                             </div>
 
@@ -118,15 +118,12 @@
 
                         <div class="messages flex-grow-1">
 
-                                <div v-if="selectedContact">
-
                                     <ul>
                                         <li v-for="message in selectedContact.messages">
                                             <p>{{ message.message }}</p>
                                             <span>{{ message.status }}</span>
                                         </li>
-
-                                </div>
+                                    </ul>
 
                         </div>
 
