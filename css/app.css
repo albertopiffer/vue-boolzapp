@@ -47,10 +47,6 @@ body {
     max-width: calc(100% * 8 / 9);
 }
 
-.contatti {
-    background-color: white;
-}
-
 
 /*USER*/
 
@@ -133,4 +129,30 @@ body {
 .searchbar input::placeholder {
     font-size: 14px;
     padding: 0 20px;
+}
+
+/*CONTATTI*/
+
+.contacts {
+    height: 100%;
+}
+
+.contact {
+    height: 85px;
+    
+    background-color: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 12px !important;
+
+    padding-top: 1rem !important;
+    padding-right: 0.5rem !important;
+}
+
+.contacts img {
+    margin: 0 1.5rem !important;
+}
+
+.contacts h5 {
+    font-size: 15px !important
 }

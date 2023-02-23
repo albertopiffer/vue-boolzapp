@@ -32,7 +32,7 @@
                     <div class="user d-flex justify-content-between align-items-center px-3">
 
                         <div class="d-flex align-items-center gap-2">
-                            <img src="./img/avatar_1.png" alt="" class="profilePic">
+                            <img src="./img/avatar_s.png" alt="" class="profilePic">
                             <h5>Sofia</h5>
                         </div>
 
@@ -72,13 +72,21 @@
                             </form>
                     </div>
 
-                    <div class="contatti d-flex flex-column justify-content-start bg-primary">
+                    <div class="contacts d-flex flex-column justify-content-start">
                         <div                            
                         @click="capiamo(contact)"
                         v-for="(contact,index) in contacts"
-                        class="d-flex justify-content-between"
+                        class="contact d-flex justify-content-between"
                         >
-                        {{ contact.name }}
+                            <img :src="contact.avatar" alt="" class="profilePic">
+
+                            <div class="flex-grow-1">
+                                <h5>{{ contact.name }}</h5>
+                                <span>Ultimo messaggio inviato</span>
+                            </div>
+
+                            <span>12:00</span>
+
                         </div>
                     </div>
 
