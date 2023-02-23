@@ -30,7 +30,7 @@
             <div class="container col-8-10 mx-auto bg-white">
                 <div class="row  h-100">
 
-                    <aside class="col-4 d-flex flex-column">
+                    <aside class="col-4 d-flex flex-column">                                                        <!-- SECTION SINISTRA ASIDE -->
 
                         <div class="user d-flex justify-content-between align-items-center px-3">
 
@@ -73,8 +73,8 @@
 
                         <div class="contacts d-flex flex-column justify-content-start">
                             <div                            
-                            @click="capiamo(contact)"
-                            v-for="(contact,index) in contacts"
+                            v-for="contact in contacts"
+                            @click="selectContact(contact.name)"
                             class="contact d-flex justify-content-between"
                             >
                                 <img :src="contact.avatar" alt="" class="profilePic">
@@ -91,7 +91,7 @@
 
                     </aside>
                     
-                    <section class="col-8 d-flex flex-column justify-content-between">
+                    <section class="col-8 d-flex flex-column justify-content-between">                              <!-- SECTION DESTRA -->
                         
                         <div class="chatContact d-flex justify-content-between align-items-center px-3">
 
@@ -117,6 +117,16 @@
                         </div>
 
                         <div class="messages flex-grow-1">
+
+                                <div v-if="selectedContact">
+
+                                    <ul>
+                                        <li v-for="message in selectedContact.messages">
+                                            <p>{{ message.message }}</p>
+                                            <span>{{ message.status }}</span>
+                                        </li>
+
+                                </div>
 
                         </div>
 

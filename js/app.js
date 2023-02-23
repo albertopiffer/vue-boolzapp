@@ -175,30 +175,19 @@ createApp({
 				},
 			],
             
-			inputValue: '',
+			selectedContactName: null,
 		}
 
 	},
 
-	// methods: {
-	// 	addTask() {
-	// 		const newTask = {
-    //             text: this.inputValue,
-    //             done: false,
-    //         }
-	// 		this.tasks.push(newTask)
-	// 		this.inputValue = ''
-	// 	},
-	// 	removeTask(startIndex) {
-	// 		console.log(
-	// 			'elimino il task con indice:',
-	// 			startIndex,
-	// 			this.tasks[startIndex]
-	// 		)
-	// 		this.tasks.splice(startIndex, 1)
-	// 	},
-	// 	invertiDone (task) {
-	// 		task.done = !task.done;
-	// 	},
-	// },
+	computed: {
+		selectedContact() {
+			return this.contacts.find(contact => contact.name === this.selectedContactName)
+		}
+	},
+	methods: {
+		selectContact(name) {
+			this.selectedContactName = name
+		},
+	},
 }).mount('#app')
