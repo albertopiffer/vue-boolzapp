@@ -108,22 +108,24 @@ body {
 }
 
 .searchbar button {
-    flex-grow: 1 !important;
     width: 75px !important;
     border-radius: 0 !important;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white !important;
+
+    line-height: 35px;
 }
 
 .searchbar input {
-    width: 350px; /*IMPOSSIBILE IMPOSTARE LARGHEZZA PERCENTUALE CHIEDERE AI TUTOR*/
     border-radius: 0 !important;
-    flex-grow: 1 !important;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     font-size: 14px;
+    line-height: 35px;
 
     padding: 0 20px;
+
+    border: none;
 }
 
 .searchbar input::placeholder {
@@ -131,11 +133,7 @@ body {
     padding: 0 20px;
 }
 
-/*CONTATTI*/
-
-.contacts {
-    height: 100%;
-}
+/*CONTACTS*/
 
 .contact {
     height: 85px;
@@ -155,4 +153,62 @@ body {
 
 .contacts h5 {
     font-size: 15px !important
+}
+
+.contacts .profilePic {
+    height: 60px !important;
+}
+
+/*CHAT*/
+
+/*CONTACT*/
+
+.chatContact {
+    height: 75px;
+    background-color: #eaeaea;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.chatContact h5 {
+    font-size: 14px !important;
+}
+
+.chatContact li {
+    color: #b1b1b1;
+}
+
+.chatContact span {
+    opacity: 0.5;
+    font-size: 12px !important;
+}
+
+.chatName {
+    margin-left: 1.5rem !important;
+}
+
+/*MESSAGES*/
+
+.messages {
+    background-image: url('../img/bck.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*MESSAGE BAR*/
+
+.messageBar {
+    background-color: #f3eeea;
+    height: 75px;
+}
+
+.messageBar input {
+    line-height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.messageBar input::placeholder {
+    font-size: 14px;
+    padding: 0 20px;
 }
