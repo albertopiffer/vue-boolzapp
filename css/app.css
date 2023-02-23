@@ -123,14 +123,13 @@ body {
     font-size: 14px;
     line-height: 35px;
 
-    padding: 0 20px;
+    padding: 0 20px !important;
 
     border: none;
 }
 
 .searchbar input::placeholder {
-    font-size: 14px;
-    padding: 0 20px;
+    font-size: 14px; /*ridondante?*/
 }
 
 /*CONTACTS*/
@@ -206,9 +205,11 @@ body {
     line-height: 50px;
     border: none;
     border-radius: 10px;
+
+    font-size: 14px;
+    padding: 0 20px !important;
 }
 
 .messageBar input::placeholder {
-    font-size: 14px;
-    padding: 0 20px;
+    font-size: 14px; /*ridondante?*/    
 }
