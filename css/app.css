@@ -190,8 +190,8 @@ body {
 .messages {
     background-image: url('../img/bck.png');
     
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 /*MESSAGE BAR*/
