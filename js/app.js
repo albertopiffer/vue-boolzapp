@@ -211,9 +211,23 @@ createApp({
                 date: this.getCurrentDateTime(),
 				message: this.inputValue,
 				status: 'sent'
-            }
-			ContactId.messages.push(newMessage)
-			this.inputValue = ''
+            };
+
+			ContactId.messages.push(newMessage);
+			this.inputValue = '';
+
+			setTimeout(() => {
+				this.reply(ContactId);
+			}, 1000);
+		},
+
+		reply(ContactId) {
+			const newMessage = {
+                date: this.getCurrentDateTime(),
+				message: 'ok',
+				status: 'received'
+            };
+			ContactId.messages.push(newMessage);
 		},
 
 		getCurrentDateTime() {
