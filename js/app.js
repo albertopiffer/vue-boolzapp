@@ -177,7 +177,7 @@ createApp({
             
 			selectedContactName: 'Michele',
 			inputValue: '',
-			inputSearch: '',
+			searchCondition: '',
 		}
 
 	},
