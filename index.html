@@ -118,9 +118,9 @@
 
                         <div class="messages flex-grow-1">
 
-                                    <ul>
-                                        <li v-for="message in selectedContact.messages" class="baloon position-relative">
-                                            <p :class="message.status" >{{ message.message }}</p>
+                                    <ul class="d-flex flex-column">
+                                        <li v-for="message in selectedContact.messages" :class="message.status" class="baloon position-relative">
+                                            <p>{{ message.message }}</p>
                                             <span>{{ formattedHour(message.date) }}</span>
                                         </li>
                                     </ul>
