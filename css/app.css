@@ -158,6 +158,11 @@ body {
     height: 60px !important;
 }
 
+.contact:hover,
+.activeContact {
+    background-color: #e9ebeb !important;
+}
+
 /*CHAT*/
 
 /*CONTACT*/
@@ -204,6 +209,8 @@ body {
 
     padding: 20px !important;
     border-radius: 10px !important;
+
+    word-wrap: break-word !important;
 }
 
 .baloon span {

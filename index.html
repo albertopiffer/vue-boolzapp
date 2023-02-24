@@ -76,6 +76,7 @@
                             v-for="contact in contacts"
                             @click="selectContact(contact.name)"
                             class="contact d-flex justify-content-between"
+                            :class="{ 'activeContact': (contact.name == selectedContactName) }"
                             >
                                 <img :src="contact.avatar" alt="" class="profilePic">
 
