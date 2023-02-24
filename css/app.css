@@ -154,6 +154,10 @@ body {
     font-size: 15px !important
 }
 
+.contact span {
+    opacity: 0.5;
+}
+
 .contacts .profilePic {
     height: 60px !important;
 }
