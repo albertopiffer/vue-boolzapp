@@ -192,6 +192,27 @@ body {
     
     background-repeat: repeat;
     background-size: contain;
+
+    padding: 60px 100px !important;
+}
+
+.baloon {
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 20px !important;
+
+    margin-bottom: 10px !important;
+
+    width: fit-content !important;
+    max-width: calc((100% / 3) * 2);
+}
+
+.baloon span {
+    font-size: 10px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
 }
 
 /*MESSAGE BAR*/
