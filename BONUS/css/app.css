@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/*RESET*****************************************************************************************/
+
+* {
+	padding: 0 !important;
+    margin: 0 !important;
+	box-sizing: border-box !important;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+/***********************************************************************************************************************/
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #009688 15%, #d8dbd5 15%);
+}
+
+.col-8-10 {
+    flex-basis: 80%;
+    max-width: 80%;
+
+    height: 90vh;
+}
+
+.col-8-9 {
+    flex-basis: calc(100% * 8 / 9);
+    max-width: calc(100% * 8 / 9);
+}
+
+
+/*USER*/
+
+.user {
+    height: 75px;
+    background-color: #eaeaea;
+}
+
+.user h5 {
+    font-size: 14px !important;
+}
+
+.user li {
+    color: #b1b1b1;
+}
+
+.profilePic {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+    height: 50px;
+
+    border-radius: 999px;
+}
+
+/*NOTIFICATION*/
+
+.notification {
+    height: 75px;
+    background-color: #8edafc;
+}
+
+.bell {
+    aspect-ratio: 1/1;
+    height: 50px;
+
+    font-size: 18px;
+    color: #8edafc;
+    background-color: white;
+    
+    border-radius: 999px;
+}
+
+.notification h5 {
+    font-size: 15px !important;
+}
+
+.notification a {
+    font-size: 13px !important;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+/*SEARCH*/
+
+.searchbar {
+    height: 50px;
+    background-color: #eaeaea;
+}
+
+.searchbar button {
+    width: 75px !important;
+    border-radius: 0 !important;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: white !important;
+
+    line-height: 35px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.searchbar input {
+    border-radius: 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 14px;
+    line-height: 35px;
+
+    padding: 0 20px !important;
+
+    border: none;
+}
+
+.searchbar input::placeholder {
+    font-size: 14px; /*ridondante?*/
+}
+
+/*CONTACTS*/
+
+.contact {
+    height: 85px;
+    
+    background-color: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 12px !important;
+
+    padding-top: 1rem !important;
+    padding-right: 0.5rem !important;
+}
+
+.contacts img {
+    margin: 0 1.5rem !important;
+}
+
+.contacts h5 {
+    font-size: 15px !important
+}
+
+.contact span {
+    opacity: 0.5;
+}
+
+.contacts .profilePic {
+    height: 60px !important;
+}
+
+.contact:hover,
+.activeContact {
+    background-color: #e9ebeb !important;
+}
+
+/*CHAT*/
+
+/*CONTACT*/
+
+main section {
+    height: 90vh;       /*altezza fissa container per consentire overflow scroll dei messaggi*/
+}
+
+.chatContact {
+    height: 75px;
+    background-color: #eaeaea;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.chatContact h5 {
+    font-size: 14px !important;
+}
+
+.chatContact li {
+    color: #b1b1b1;
+}
+
+.chatContact span {
+    opacity: 0.5;
+    font-size: 12px !important;
+}
+
+.chatName {
+    margin-left: 1.5rem !important;
+}
+
+/*MESSAGES*/
+
+.messages {
+    background-image: url('../img/bck.png');
+    
+    background-repeat: repeat;
+    background-size: contain;
+
+    padding: 60px 100px !important;
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.baloon {
+    margin-bottom: 10px !important;
+
+    width: fit-content !important;
+    max-width: calc((100% / 3) * 2);
+
+    padding: 20px !important;
+    border-radius: 10px !important;
+
+    word-wrap: break-word !important;
+}
+
+.baloon span {
+    font-size: 10px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    opacity: 0.5;
+}
+
+.received {
+    background-color: white;    
+}
+
+.sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+/*MESSAGE BAR*/
+
+.messageBar {
+    background-color: #f3eeea;
+    height: 75px;
+    flex-shrink: 0;
+}
+
+.messageBar input {
+    line-height: 50px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 14px;
+    padding: 0 20px !important;
+}
+
+.messageBar input::placeholder {
+    font-size: 14px; /*ridondante?*/    
+}
