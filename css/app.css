@@ -171,10 +171,15 @@ body {
 
 /*CONTACT*/
 
+main section {
+    height: 90vh;       /*altezza fissa container per consentire overflow scroll dei messaggi*/
+}
+
 .chatContact {
     height: 75px;
     background-color: #eaeaea;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
 }
 
 .chatContact h5 {
@@ -203,6 +208,8 @@ body {
     background-size: contain;
 
     padding: 60px 100px !important;
+    overflow: scroll !important;
+    overflow-x: hidden !important;
 }
 
 .baloon {
@@ -239,6 +246,7 @@ body {
 .messageBar {
     background-color: #f3eeea;
     height: 75px;
+    flex-shrink: 0;
 }
 
 .messageBar input {
