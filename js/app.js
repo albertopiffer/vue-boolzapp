@@ -207,6 +207,11 @@ createApp({
 
 		addMessage() {
 			const ContactId = this.contacts.find(contact => contact.name === this.selectedContactName);
+
+			const trimmedMessage = this.inputValue.trim();
+    		if (!trimmedMessage) {
+        		return; // don't send an empty message
+    		}
 			
 			const newMessage = {
                 date: this.getCurrentDateTime(),
